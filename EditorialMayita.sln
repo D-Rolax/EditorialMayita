@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33627.172
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Libreria.Shared", "Libreria.Shared\Libreria.Shared.csproj", "{300C9CE6-E466-4F0B-B2AC-8DE273138203}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Libreria.Shared", "Libreria.Shared\Libreria.Shared.csproj", "{300C9CE6-E466-4F0B-B2AC-8DE273138203}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Libreria.API", "Libreria.API\Libreria.API.csproj", "{56197875-C4E0-4F66-B7C5-85E05E2C36F2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Libreria.API", "Libreria.API\Libreria.API.csproj", "{56197875-C4E0-4F66-B7C5-85E05E2C36F2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Libreria.Web", "Libreria.Web\Libreria.Web.csproj", "{3BC79CE1-A020-4E46-B69E-7524878D0371}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Libreria.Mobile", "Libreria.Mobile\Libreria.Mobile.csproj", "{201C0967-197E-4AA6-8E94-7B4232075FD2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,16 @@ Global
 		{56197875-C4E0-4F66-B7C5-85E05E2C36F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{56197875-C4E0-4F66-B7C5-85E05E2C36F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{56197875-C4E0-4F66-B7C5-85E05E2C36F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BC79CE1-A020-4E46-B69E-7524878D0371}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BC79CE1-A020-4E46-B69E-7524878D0371}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BC79CE1-A020-4E46-B69E-7524878D0371}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BC79CE1-A020-4E46-B69E-7524878D0371}.Release|Any CPU.Build.0 = Release|Any CPU
+		{201C0967-197E-4AA6-8E94-7B4232075FD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{201C0967-197E-4AA6-8E94-7B4232075FD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{201C0967-197E-4AA6-8E94-7B4232075FD2}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{201C0967-197E-4AA6-8E94-7B4232075FD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{201C0967-197E-4AA6-8E94-7B4232075FD2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{201C0967-197E-4AA6-8E94-7B4232075FD2}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
