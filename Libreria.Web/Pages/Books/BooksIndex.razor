@@ -1,0 +1,59 @@
+﻿@page "/books"
+@inject IRepository repository 
+<h3> Libros </h3>
+
+<GenericList MyList="Books">
+    <Body>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Nombre</th>
+                    <th>Nivel</th>
+                    <th>Curso</th>
+                    <th>Materia</th>
+                    <th>Año de Edición</th>
+                    <th>Estado</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var book in Books!)
+                {
+                    <tr>
+                        <td>
+                            <a class="btn btn-warning">Editar</a>
+                            <button class="btn btn-danger">Borrar</button>
+                        </td>
+                        <td>
+                            @book.Name
+                        </td>
+                        <td>
+                            @book.level
+                        </td>
+                        <td>
+                            @book.Course
+                        </td>
+                        <td>
+                            @book.Subject
+                        </td>
+                        <td>
+                            @book.EditionYear
+                        </td>
+                        <td>
+                            @book.State
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </Body>
+</GenericList>
+
+@code {
+    public List<Book>? Books { get; set; }
+    protected override async Task OnInitializedAsync()
+    {
+        var responseHttp = await repository.Get<List<Book>>("/api/books");
+        Books = responseHttp.Response!;
+    }
+}
